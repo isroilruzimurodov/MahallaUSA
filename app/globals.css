@@ -1,0 +1,23 @@
+@import "@fontsource/source-sans-3/400.css";
+@import "@fontsource/source-sans-3/600.css";
+@import "@fontsource/source-sans-3/700.css";
+@import "@fontsource-variable/source-serif-4/index.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-padding-top: 96px; -webkit-text-size-adjust: 100%; }
+  body { @apply bg-paper text-ink font-sans antialiased; font-size: 17px; line-height: 27px; }
+  a { @apply text-teal underline-offset-4; }
+  a:hover { @apply text-teal-strong; }
+  :focus-visible { outline: 2px solid #0B4F59; outline-offset: 2px; border-radius: 2px; }
+  h1, h2, h3 { text-wrap: balance; }
+}
+
+@layer components {
+  .todo { background: #F9E5E4; border: 1px dashed #B01C24; border-radius: 4px; padding: 0 4px; color: inherit; }
+  .on-dark .todo { background: transparent; border-color: #F08A8A; }
+  .prose-guide p + p { margin-top: 12px; }
+}
