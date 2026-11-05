@@ -14,19 +14,19 @@ export const site = {
 
   // Contact
   address: {
-    street: "[Street address]",
+    street: "8778 Bay Parkway, 2nd Floor",
     city: "Brooklyn",
     region: "NY",
-    zip: "[ZIP]",
+    zip: "11214",
   },
-  email: "[info@mahallausa.org]",
-  sponsorEmail: "[sponsors@mahallausa.org]",
-  phone: "[Phone number]",
+  email: "chesscup@mahallausa.org",
+  sponsorEmail: "chesscup@mahallausa.org",
+  phone: "(929) 559-2999",
   officeHours: "[Office hours]",
 
   // Leadership (who sponsors talk to)
-  president: "[President's full name]",
-  vicePresident: "[Vice President's full name]",
+  president: "Abdumalik Ahmedov",
+  vicePresident: "Dilshod Bakhriddinov",
 
   // Social links — leave a value empty ("") to hide that icon
   social: {
@@ -43,6 +43,14 @@ export const site = {
     festivalGuests: "~1,000",
     students: "[ZiyoArt students]",
     eventsPerYear: "[Events per year]",
+  },
+
+  // ZiyoArt Academy (MahallaUSA's school)
+  ziyoart: {
+    phone: "(929) 559-2999",
+    email: "ziyoartusa@gmail.com",
+    instagram: "https://www.instagram.com/ziyoart_academy/",
+    chessInstagram: "https://www.instagram.com/ziyoartacademy_chess/",
   },
 
   // Donations & tuition (Zeffy recommended: no fees for the nonprofit)

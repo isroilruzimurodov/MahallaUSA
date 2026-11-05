@@ -7,6 +7,7 @@ import { pageMeta } from "@/lib/meta";
 import { site, isMissing } from "@/content/site";
 import { Button, Container, Fact, PageHeader, PhotoSlot } from "@/components/ui";
 import AskUs from "@/components/AskUs";
+import { ziyoClasses, funSunday } from "@/content/ziyoart";
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
@@ -31,9 +32,14 @@ export default async function Program({ params }: Props) {
   const cta =
     slug === "ziyoart" ? (
       isMissing(site.ziyoartEnrollUrl) ? (
-        <p className="text-[15px]">
-          {t.common.enroll}: <Fact value={site.ziyoartEnrollUrl} />
-        </p>
+        <div className="flex flex-wrap items-center gap-3">
+          <Button href={`tel:${site.ziyoart.phone.replace(/[^\d+]/g, "")}`} variant="accent" size="lg">
+            {t.common.call} {site.ziyoart.phone}
+          </Button>
+          <a href={site.ziyoart.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold">
+            Instagram: @ziyoart_academy
+          </a>
+        </div>
       ) : (
         <Button href={site.ziyoartEnrollUrl} variant="accent" size="lg">
           {p.cta}
@@ -78,6 +84,62 @@ export default async function Program({ params }: Props) {
           </ul>
         </aside>
       </Container>
+
+      {slug === "ziyoart" && (
+        <>
+          <section className="border-t border-line bg-card">
+            <Container className="py-16">
+              <h2 className="font-display text-[30px] font-semibold leading-[36px] sm:text-[36px] sm:leading-[42px]">{t.common.classesTitle}</h2>
+              <p className="mt-3 max-w-read text-[18px] leading-[28px] text-muted">{t.common.classesLead}</p>
+              <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {ziyoClasses.map((c) => {
+                  const ct = c.text[lang];
+                  return (
+                    <article key={c.id} className="flex flex-col gap-3 rounded-lg border border-line bg-paper p-6">
+                      <h3 className="text-[20px] font-semibold leading-[26px]">{ct.name}</h3>
+                      {(c.ages || ct.schedule) && (
+                        <p className="text-[15px] leading-6 text-muted">
+                          {c.ages && `${t.common.ages} ${c.ages}`}
+                          {c.ages && ct.schedule && " · "}
+                          {ct.schedule}
+                        </p>
+                      )}
+                      <ul className="flex flex-1 list-disc flex-col gap-1 pl-5">
+                        {ct.points.map((pt) => (
+                          <li key={pt}>{pt}</li>
+                        ))}
+                      </ul>
+                      <ul className="flex flex-col gap-1 border-t border-line pt-3 text-[15px] font-semibold text-teal-strong">
+                        {ct.prices.map((pr) => (
+                          <li key={pr}>{pr}</li>
+                        ))}
+                      </ul>
+                    </article>
+                  );
+                })}
+              </div>
+            </Container>
+          </section>
+          <Container className="py-16">
+            <div className="grid gap-8 rounded-lg bg-teal-soft p-8 sm:p-10 lg:grid-cols-2">
+              <div>
+                <p className="mb-3 self-start text-[13px] font-semibold uppercase tracking-[0.06em] text-teal-strong">{t.common.weekly} · {t.common.free}</p>
+                <h2 className="font-display text-[28px] font-semibold leading-[34px]">{funSunday[lang].title}</h2>
+                <p className="mt-2 text-[17px] font-semibold">{funSunday[lang].schedule}</p>
+                <p className="mt-2 text-muted">{funSunday[lang].note}</p>
+                <p className="mt-4 text-[15px]">
+                  <a href={`tel:${site.ziyoart.phone.replace(/[^\d+]/g, "")}`}>{site.ziyoart.phone}</a> · <a href={`mailto:${site.ziyoart.email}`}>{site.ziyoart.email}</a>
+                </p>
+              </div>
+              <ul className="grid list-disc gap-x-6 gap-y-2 pl-5 sm:grid-cols-2">
+                {funSunday[lang].points.map((pt) => (
+                  <li key={pt}>{pt}</li>
+                ))}
+              </ul>
+            </div>
+          </Container>
+        </>
+      )}
     </>
   );
 }

@@ -37,6 +37,12 @@ const en = {
     photoNeeded: "Photo coming soon",
     backTo: "Back to",
     readGuide: "Read the guide",
+    call: "Call",
+    classesTitle: "Classes and tuition",
+    classesLead: "Monthly tuition. Spaces are limited — call or message us to reserve a place.",
+    ages: "Ages",
+    free: "Free",
+    weekly: "Every week",
   },
   home: {
     eyebrow: "Uzbek-American Association · Brooklyn, NY · 10+ years",
@@ -94,12 +100,12 @@ const en = {
       {
         slug: "ziyoart",
         title: "ZiyoArt Academy",
-        short: "Classes for children and teens in Brooklyn.",
+        short: "MahallaUSA's school for Uzbek children in Brooklyn — culture, values and learning.",
         body: [
-          "ZiyoArt Academy is MahallaUSA's school for children and teens. [Describe what is taught — for example art, music, dance, Uzbek language — and for which ages.]",
-          "Classes are tuition-based. Families enroll and pay online; the team will confirm a place and a schedule.",
+          "ZiyoArt Academy teaches Uzbek children in New York their language, culture and values — alongside the schoolwork, arts and skills they need to do well here.",
+          "Families choose from an after-school program, a weekend program and classes in dance, chess, robotics, piano, crafts and tutoring. Families with two or more children get a 10% discount.",
         ],
-        details: ["[Ages]", "[Days and times]", "[Location]", "[Tuition per month or term]"],
+        details: ["Ages 5–16", "After school and weekends", "8778 Bay Parkway, 2nd Floor, Brooklyn", "10% discount for siblings"],
         cta: "Enroll",
       },
       {

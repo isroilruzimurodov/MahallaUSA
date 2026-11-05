@@ -33,6 +33,12 @@ export function Button({
   const cls = `inline-flex items-center justify-center rounded-md text-center font-semibold no-underline transition-colors ${
     size === "lg" ? "min-h-[52px] px-7 text-[17px]" : "min-h-[48px] px-6 py-2"
   } ${variants[variant]}`;
+  if (/^(tel|mailto):/.test(href))
+    return (
+      <a href={href} className={cls}>
+        {children}
+      </a>
+    );
   if (external || href.startsWith("http"))
     return (
       <a href={href} className={cls} target="_blank" rel="noopener noreferrer">

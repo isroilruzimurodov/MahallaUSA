@@ -39,6 +39,12 @@ const uz: Dict = {
     photoNeeded: "Surat tez orada",
     backTo: "Orqaga:",
     readGuide: "Qoʻllanmani oʻqish",
+    call: "Qoʻngʻiroq qilish",
+    classesTitle: "Darslar va toʻlovlar",
+    classesLead: "Oylik toʻlov. Joylar cheklangan — joy band qilish uchun qoʻngʻiroq qiling yoki yozing.",
+    ages: "Yoshi",
+    free: "Bepul",
+    weekly: "Har hafta",
   },
   home: {
     eyebrow: "Oʻzbek-amerikan uyushmasi · Bruklin, Nyu-York · 10+ yil",
@@ -96,12 +102,12 @@ const uz: Dict = {
       {
         slug: "ziyoart",
         title: "ZiyoArt Academy",
-        short: "Bruklindagi bolalar va oʻsmirlar uchun darslar.",
+        short: "MahallaUSAning Bruklindagi oʻzbek bolalari uchun maktabi — madaniyat, qadriyatlar va bilim.",
         body: [
-          "ZiyoArt Academy — MahallaUSAning bolalar va oʻsmirlar uchun maktabi. [Nima oʻqitilishini yozing — masalan, rasm, musiqa, raqs, oʻzbek tili — va qaysi yoshdagilar uchun.]",
-          "Darslar pullik. Oilalar onlayn yoziladi va toʻlaydi; jamoa joy va jadvalni tasdiqlaydi.",
+          "ZiyoArt Academy Nyu-Yorkdagi oʻzbek bolalariga ona tili, madaniyati va qadriyatlarimizni oʻrgatadi — shu bilan birga bu yerda muvaffaqiyatli boʻlishi uchun kerakli darslar, sanʼat va koʻnikmalarni beradi.",
+          "Oilalar maktabdan keyingi dastur, dam olish kunlari dasturi hamda raqs, shaxmat, robototexnika, pianino, qoʻl mehnati va repetitorlik darslaridan tanlashi mumkin. Ikki va undan ortiq farzandli oilalarga 10% chegirma.",
         ],
-        details: ["[Yoshi]", "[Kunlari va vaqti]", "[Manzil]", "[Oylik yoki semestr toʻlovi]"],
+        details: ["5–16 yosh", "Maktabdan keyin va dam olish kunlari", "8778 Bay Parkway, 2-qavat, Bruklin", "Aka-uka va opa-singillarga 10% chegirma"],
         cta: "Yozilish",
       },
       {

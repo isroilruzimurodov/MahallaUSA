@@ -11,6 +11,7 @@ import { NewsletterForm } from "@/components/Forms";
 import EventCard from "@/components/EventCard";
 import { formatDate } from "@/lib/format";
 import { pageMeta } from "@/lib/meta";
+import { funSunday } from "@/content/ziyoart";
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -121,6 +122,17 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             </div>
           </div>
         </article>
+        <Link
+          href={href(lang, "/programs/ziyoart")}
+          className="mt-6 flex flex-wrap items-center justify-between gap-4 rounded-lg border border-line bg-teal-soft p-6 text-ink no-underline hover:border-teal hover:text-ink"
+        >
+          <span className="flex flex-col gap-1">
+            <span className="text-[13px] font-semibold uppercase tracking-[0.06em] text-teal-strong">{t.common.weekly} · {t.common.free}</span>
+            <span className="text-[20px] font-semibold leading-[26px]">{funSunday[lang].title}</span>
+            <span className="text-muted">{funSunday[lang].schedule}</span>
+          </span>
+          <span className="font-semibold text-teal">{t.common.learnMore} →</span>
+        </Link>
         {events.length > 0 && (
           <div className="mt-6 grid gap-6 md:grid-cols-3">
             {events.map((e) => (
