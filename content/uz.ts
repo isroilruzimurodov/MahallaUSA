@@ -40,8 +40,8 @@ const uz: Dict = {
     backTo: "Orqaga:",
     readGuide: "Qoʻllanmani oʻqish",
     call: "Qoʻngʻiroq qilish",
-    classesTitle: "Darslar va toʻlovlar",
-    classesLead: "Oylik toʻlov. Joylar cheklangan — joy band qilish uchun qoʻngʻiroq qiling yoki yozing.",
+    classesTitle: "Darslar",
+    classesLead: "Toʻlov va jadval haqida ZiyoArt bilan bogʻlaning yoki ziyoartacademy.com saytiga kiring. Joylar cheklangan.",
     ages: "Yoshi",
     free: "Bepul",
     weekly: "Har hafta",
@@ -105,9 +105,9 @@ const uz: Dict = {
         short: "MahallaUSAning Bruklindagi oʻzbek bolalari uchun maktabi — madaniyat, qadriyatlar va bilim.",
         body: [
           "ZiyoArt Academy Nyu-Yorkdagi oʻzbek bolalariga ona tili, madaniyati va qadriyatlarimizni oʻrgatadi — shu bilan birga bu yerda muvaffaqiyatli boʻlishi uchun kerakli darslar, sanʼat va koʻnikmalarni beradi.",
-          "Oilalar maktabdan keyingi dastur, dam olish kunlari dasturi hamda raqs, shaxmat, robototexnika, pianino, qoʻl mehnati va repetitorlik darslaridan tanlashi mumkin. Ikki va undan ortiq farzandli oilalarga 10% chegirma.",
+          "Oilalar maktabdan keyingi dastur, dam olish kunlari dasturi hamda raqs, shaxmat, robototexnika, pianino, qoʻl mehnati va repetitorlik darslaridan tanlashi mumkin.",
         ],
-        details: ["5–16 yosh", "Maktabdan keyin va dam olish kunlari", "8778 Bay Parkway, 2-qavat, Bruklin", "Aka-uka va opa-singillarga 10% chegirma"],
+        details: ["5–16 yosh", "Maktabdan keyin va dam olish kunlari", "8778 Bay Parkway, 2-qavat, Bruklin", "Roʻyxatdan oʻtish: ziyoartacademy.com"],
         cta: "Yozilish",
       },
       {

@@ -30,9 +30,9 @@ export const site = {
 
   // Social links — leave a value empty ("") to hide that icon
   social: {
-    instagram: "[Instagram URL]",
-    facebook: "[Facebook URL]",
-    telegram: "[Telegram URL]",
+    instagram: "https://www.instagram.com/mahallausa",
+    facebook: "https://www.facebook.com/share/1ErMzG7AwE/",
+    telegram: "", // waiting for the real Telegram group link
     youtube: "",
   },
 
@@ -49,13 +49,14 @@ export const site = {
   ziyoart: {
     phone: "(929) 559-2999",
     email: "ziyoartusa@gmail.com",
+    website: "https://www.ziyoartacademy.com/",
     instagram: "https://www.instagram.com/ziyoart_academy/",
     chessInstagram: "https://www.instagram.com/ziyoartacademy_chess/",
   },
 
   // Donations & tuition (Zeffy recommended: no fees for the nonprofit)
   donateFormUrl: "[Zeffy donation form URL]",
-  ziyoartEnrollUrl: "[ZiyoArt enrollment / tuition form URL]",
+  ziyoartEnrollUrl: "https://www.ziyoartacademy.com/enrollment",
   sponsorKitPdf: "[Sponsor kit PDF]",
 
 } as const;

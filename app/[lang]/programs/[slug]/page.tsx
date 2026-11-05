@@ -31,20 +31,17 @@ export default async function Program({ params }: Props) {
 
   const cta =
     slug === "ziyoart" ? (
-      isMissing(site.ziyoartEnrollUrl) ? (
-        <div className="flex flex-wrap items-center gap-3">
-          <Button href={`tel:${site.ziyoart.phone.replace(/[^\d+]/g, "")}`} variant="accent" size="lg">
-            {t.common.call} {site.ziyoart.phone}
-          </Button>
-          <a href={site.ziyoart.instagram} target="_blank" rel="noopener noreferrer" className="font-semibold">
-            Instagram: @ziyoart_academy
-          </a>
-        </div>
-      ) : (
+      <div className="flex flex-wrap items-center gap-3">
         <Button href={site.ziyoartEnrollUrl} variant="accent" size="lg">
           {p.cta}
         </Button>
-      )
+        <Button href={`tel:${site.ziyoart.phone.replace(/[^\d+]/g, "")}`} variant="outline" size="lg">
+          {t.common.call} {site.ziyoart.phone}
+        </Button>
+        <a href={site.ziyoart.website} target="_blank" rel="noopener noreferrer" className="font-semibold">
+          ziyoartacademy.com →
+        </a>
+      </div>
     ) : slug === "festivals" ? (
       <Button href={href(lang, "/events")}>{p.cta}</Button>
     ) : slug === "youth-club" ? (
@@ -107,11 +104,6 @@ export default async function Program({ params }: Props) {
                       <ul className="flex flex-1 list-disc flex-col gap-1 pl-5">
                         {ct.points.map((pt) => (
                           <li key={pt}>{pt}</li>
-                        ))}
-                      </ul>
-                      <ul className="flex flex-col gap-1 border-t border-line pt-3 text-[15px] font-semibold text-teal-strong">
-                        {ct.prices.map((pr) => (
-                          <li key={pr}>{pr}</li>
                         ))}
                       </ul>
                     </article>
