@@ -2,13 +2,15 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
-import { upcomingEvents } from "@/content/events";
+import { getUpcomingEvents } from "@/lib/cms";
 import { Container, H2, PageHeader, PhotoSlot } from "@/components/ui";
 import EventCard from "@/components/EventCard";
 import { NewsletterForm } from "@/components/Forms";
 import Link from "next/link";
 import { href } from "@/lib/i18n";
 import { funSunday } from "@/content/ziyoart";
+
+export const revalidate = 60;
 
 type Props = { params: Promise<{ lang: string }> };
 
@@ -24,7 +26,7 @@ export default async function Events({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const t = getDict(lang);
   const e = t.events;
-  const list = upcomingEvents();
+  const list = await getUpcomingEvents();
 
   return (
     <>

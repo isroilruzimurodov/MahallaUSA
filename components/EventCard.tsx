@@ -5,7 +5,12 @@ import { formatDate } from "@/lib/format";
 export default function EventCard({ event, lang, rsvp }: { event: Event; lang: Locale; rsvp: string }) {
   const text = event.text[lang];
   return (
-    <article className="flex gap-5 rounded-lg border border-line bg-card p-6">
+    <article className="flex flex-col overflow-hidden rounded-lg border border-line bg-card">
+      {event.image && (
+        // eslint-disable-next-line @next/next/no-img-element
+        <img src={event.image} alt="" className="aspect-[16/9] w-full object-cover" loading="lazy" />
+      )}
+      <div className="flex gap-5 p-6">
       <div className="w-16 shrink-0 rounded-md bg-teal-soft py-2.5 text-center">
         <div className="text-[13px] font-semibold uppercase leading-4 text-teal-strong">{formatDate(event.date, lang, { month: "short" })}</div>
         <div className="font-display text-[28px] font-semibold leading-8">{formatDate(event.date, lang, { day: "numeric" })}</div>
@@ -21,6 +26,7 @@ export default function EventCard({ event, lang, rsvp }: { event: Event; lang: L
             {rsvp} →
           </a>
         )}
+      </div>
       </div>
     </article>
   );

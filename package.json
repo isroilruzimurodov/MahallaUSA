@@ -12,9 +12,13 @@
   "dependencies": {
     "@fontsource-variable/source-serif-4": "^5.2.5",
     "@fontsource/source-sans-3": "^5.3.1",
+    "@sanity/image-url": "^1.2.0",
     "next": "15.5.27",
+    "next-sanity": "^10.1.4",
     "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react-dom": "19.1.1",
+    "sanity": "^4.22.1",
+    "styled-components": "^6.6.0"
   },
   "devDependencies": {
     "@types/node": "^22",

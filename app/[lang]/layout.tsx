@@ -7,6 +7,9 @@ import { site } from "@/content/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import OrgSchema from "@/components/OrgSchema";
+import AnnouncementBar from "@/components/AnnouncementBar";
+
+export const revalidate = 60;
 
 export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
@@ -36,6 +39,7 @@ export default async function LangLayout({ children, params }: { children: React
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-card focus:px-4 focus:py-3 focus:font-semibold">
           {t.nav.skip}
         </a>
+        <AnnouncementBar lang={lang} />
         <Header lang={lang} t={t} />
         <main id="main">{children}</main>
         <Footer lang={lang} t={t} />

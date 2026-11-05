@@ -1,4 +1,5 @@
-// Upcoming events. Add one object per event; past dates hide automatically.
+// Events written in code. Staff normally add events in /admin instead (see lib/cms.ts);
+// both lists are merged. Past dates hide automatically.
 import type { Locale } from "@/lib/i18n";
 
 export type Event = {
@@ -8,6 +9,7 @@ export type Event = {
   venue: string;
   rsvpUrl?: string;
   featured?: boolean;
+  image?: string;
   text: Record<Locale, { title: string; summary: string }>;
 };
 

@@ -4,7 +4,7 @@ import { getDict } from "@/lib/dict";
 import { href, isLocale } from "@/lib/i18n";
 import { site } from "@/content/site";
 import { guides } from "@/content/guides";
-import { upcomingEvents } from "@/content/events";
+import { getUpcomingEvents } from "@/lib/cms";
 import { Button, Container, Eyebrow, Fact, H2, Lead, PhotoSlot, Stat, TwinRule } from "@/components/ui";
 import ProgramIcon from "@/components/ProgramIcon";
 import { NewsletterForm } from "@/components/Forms";
@@ -12,6 +12,8 @@ import EventCard from "@/components/EventCard";
 import { formatDate } from "@/lib/format";
 import { pageMeta } from "@/lib/meta";
 import { funSunday } from "@/content/ziyoart";
+
+export const revalidate = 60;
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
@@ -25,7 +27,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   if (!isLocale(lang)) notFound();
   const t = getDict(lang);
   const h = t.home;
-  const events = upcomingEvents().slice(0, 3);
+  const events = (await getUpcomingEvents()).slice(0, 3);
 
   return (
     <>

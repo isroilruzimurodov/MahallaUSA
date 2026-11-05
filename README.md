@@ -21,10 +21,24 @@ npm run todo       # lists every [placeholder] still waiting for real informatio
 | All English text | `content/en.ts` |
 | All Uzbek text (same shape as English — the build fails if a line is missing) | `content/uz.ts` |
 | Newcomer guides (both languages, with sources and review dates) | `content/guides.ts` |
-| Events | `content/events.ts` |
+| Events, announcements, news | the admin panel at /admin (events can also go in `content/events.ts`) |
+| ZiyoArt classes | `content/ziyoart.ts` |
 | Logo | `public/logo.png` |
 
 Anything written in `[square brackets]` is a placeholder; the site highlights it so it is easy to spot. Fill it in `content/` and it updates every page.
+
+## Admin panel (for staff)
+
+Staff open **mahallausa.org/admin**, sign in, and add **events**, **announcements** (a banner at the top of every page) and **news** — each in English and Uzbek. Changes appear on the site about a minute after "Publish". No code needed.
+
+It runs on [Sanity](https://www.sanity.io) (free plan: up to 20 staff accounts). One-time setup:
+
+1. Create a free account at sanity.io and a new project named "MahallaUSA" with a dataset called `production`.
+2. In the project's settings → API → CORS origins, add `https://mahallausa.org` and `http://localhost:3000` (tick "Allow credentials").
+3. Put the project ID in Vercel as `NEXT_PUBLIC_SANITY_PROJECT_ID` (and `NEXT_PUBLIC_SANITY_DATASET=production`), then redeploy.
+4. Invite staff from the project's Members page.
+
+Until it is connected, /admin shows a "not connected" note and the site uses `content/events.ts`.
 
 ## Forms
 
