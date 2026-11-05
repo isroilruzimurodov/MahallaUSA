@@ -218,7 +218,8 @@ const en = {
       { title: "Real impact", body: "Funding that keeps classes for children and help for newcomers running — and a report on what it did." },
     ],
     levelsTitle: "Sponsorship levels",
-    levelsLead: "Sponsor one event or the whole year. Every level can be shaped around your goals.",
+    levelsLead: "Sponsor one event or the whole year. Terms are agreed personally with our President, Abdumalik Ahmedov, and shaped around your goals.",
+    priceNote: "Terms agreed with our President",
     levels: [
       { name: "Friend", priceKey: "friend", perks: ["Logo on our sponsors page", "Thank-you post on social media"] },
       { name: "Event sponsor", priceKey: "event", perks: ["Everything in Friend", "Banner and booth at one festival", "Logo on the event's posters and posts"] },

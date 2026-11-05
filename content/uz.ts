@@ -220,7 +220,8 @@ const uz: Dict = {
       { title: "Haqiqiy taʼsir", body: "Bolalar darslari va yangi kelganlarga yordamni davom ettiradigan mablagʻ — va natijalar haqida hisobot." },
     ],
     levelsTitle: "Homiylik darajalari",
-    levelsLead: "Bitta tadbirga yoki butun yilga homiylik qiling. Har bir daraja maqsadlaringizga moslashtiriladi.",
+    levelsLead: "Bitta tadbirga yoki butun yilga homiylik qiling. Shartlar Prezidentimiz Abdumalik Ahmedov bilan shaxsan kelishiladi va maqsadlaringizga moslashtiriladi.",
+    priceNote: "Shartlar Prezident bilan kelishiladi",
     levels: [
       { name: "Doʻst", priceKey: "friend", perks: ["Homiylar sahifasida logotip", "Ijtimoiy tarmoqda minnatdorchilik posti"] },
       { name: "Tadbir homiysi", priceKey: "event", perks: ["Doʻst darajasidagi hamma narsa", "Bitta festivalda banner va stend", "Tadbir afishalari va postlarida logotip"] },

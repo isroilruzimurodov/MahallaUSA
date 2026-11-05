@@ -58,12 +58,6 @@ export const site = {
   ziyoartEnrollUrl: "[ZiyoArt enrollment / tuition form URL]",
   sponsorKitPdf: "[Sponsor kit PDF]",
 
-  // Sponsorship levels (draft prices — to be confirmed by leadership)
-  sponsorPrices: {
-    friend: "[$000]",
-    event: "[$0,000]",
-    season: "[$00,000]",
-  },
 } as const;
 
 export function isMissing(value: string) {

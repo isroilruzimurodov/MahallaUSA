@@ -20,7 +20,6 @@ export default async function Sponsors({ params }: Props) {
   if (!isLocale(lang)) notFound();
   const t = getDict(lang);
   const s = t.sponsors;
-  const prices = site.sponsorPrices as Record<string, string>;
 
   return (
     <>
@@ -102,9 +101,7 @@ export default async function Sponsors({ params }: Props) {
                 >
                   {featured && <p className="self-start rounded-full bg-teal px-2.5 text-[13px] font-semibold leading-5 text-white">{s.mostChosen}</p>}
                   <h3 className={`text-[20px] font-semibold leading-[26px] ${top ? "text-white" : ""}`}>{lvl.name}</h3>
-                  <p className={`font-display text-[32px] font-semibold leading-9 ${top ? "text-white" : ""}`}>
-                    {top ? s.letsTalk : <Fact value={prices[lvl.priceKey]} />}
-                  </p>
+                  <p className={`text-[15px] font-semibold ${top ? "text-teal-light" : "text-teal-strong"}`}>{s.priceNote}</p>
                   <ul className={`flex list-disc flex-col gap-1.5 pl-5 ${top ? "text-night-muted" : "text-muted"}`}>
                     {lvl.perks.map((p) => (
                       <li key={p}>{p}</li>
