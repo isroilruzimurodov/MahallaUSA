@@ -32,7 +32,7 @@ export const site = {
   social: {
     instagram: "https://www.instagram.com/mahallausa",
     facebook: "https://www.facebook.com/share/1ErMzG7AwE/",
-    telegram: "", // waiting for the real Telegram group link
+    telegram: "https://t.me/mahallanewyork",
     youtube: "",
   },
 
