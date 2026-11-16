@@ -102,7 +102,7 @@ const uz: Dict = {
     statementBody: "Oʻzbekistonda har bir oila biror mahallaga tegishli. Nyu-Yorkda esa shu mahalla — MahallaUSA: oʻn yildan ortiq vaqt va oʻn besh mingdan ortiq odam.",
     galleryTitle: "Festivallarimizdan lavhalar",
     galleryLead: "Taom, musiqa, sport va bularning barchasini yaratadigan odamlar.",
-    captions: { plov: "Hammaga palov", stage: "Oʻzbekistonlik mashhur xonandalar", sport: "Turnirlar", honour: "Jamoamizni taqdirlash", champions: "Gʻoliblar" },
+    captions: { plov: "Hammaga palov", stage: "Oʻzbekistonlik mashhur xonandalar", sport: "Turnirlar", honour: "Oʻzbekiston Futbol Assotsiatsiyasi taqdirlovi", champions: "Gʻoliblar" },
     programsCta: "Batafsil",
   },
   programs: {

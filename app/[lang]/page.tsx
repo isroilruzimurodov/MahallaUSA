@@ -51,7 +51,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     { name: "plov-serving", caption: h.captions.plov, cls: "col-span-2 row-span-2 aspect-square sm:aspect-auto" },
     { name: "festival-singer", caption: h.captions.stage, cls: "aspect-[4/3] sm:aspect-auto" },
     { name: "goalkeeper", caption: h.captions.sport, cls: "aspect-[4/3] sm:aspect-auto" },
-    { name: "award", caption: h.captions.honour, cls: "aspect-[4/3] sm:aspect-auto" },
+    { name: "ufa-award", caption: h.captions.honour, cls: "aspect-[4/3] sm:aspect-auto" },
     { name: "trophy2", caption: h.captions.champions, cls: "aspect-[4/3] sm:aspect-auto" },
   ];
 
@@ -189,7 +189,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             {gallery.map((g) => (
               <figure key={g.name} className={`zoom group relative overflow-hidden rounded-lg ${g.cls}`}>
                 <Image src={`/photos/${g.name}.jpg`} alt={photoAlt(g.name, lang)} fill sizes="(min-width:640px) 50vw, 100vw" className="object-cover" />
-                <figcaption className="absolute bottom-3 left-3 rounded-full bg-white px-3 py-1 text-[14px] font-semibold text-ink">{g.caption}</figcaption>
+                <figcaption className="absolute bottom-3 left-3 mr-3 max-w-[calc(100%-1.5rem)] rounded-2xl bg-white px-3 py-1.5 text-[14px] font-semibold leading-5 text-ink">{g.caption}</figcaption>
               </figure>
             ))}
           </div>

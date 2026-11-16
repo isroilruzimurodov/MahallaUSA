@@ -5,6 +5,7 @@ export const photos = {
   "community-kitchen": { en: "Women in Uzbek dress cooking together around a large kazan at a MahallaUSA gathering", uz: "MahallaUSA yigʻinida milliy liboslardagi ayollar katta qozon atrofida ovqat tayyorlamoqda" },
   "festival-dance": { en: "Girls in traditional costume performing an Uzbek dance at a MahallaUSA festival", uz: "MahallaUSA festivalida milliy liboslardagi qizlar oʻzbek raqsini ijro etmoqda" },
   "festival-picnic": { en: "Families picnicking in a Brooklyn park at a MahallaUSA holiday celebration", uz: "MahallaUSA bayramida Bruklin bogʻida dam olayotgan oilalar" },
+  "ufa-award": { en: "MahallaUSA receiving an honorary plate from the Uzbekistan Football Association", uz: "MahallaUSA Oʻzbekiston Futbol Assotsiatsiyasidan esdalik sovgʻasini qabul qilmoqda" },
   "plov-serving": { en: "Volunteers serving plov from a giant kazan to guests at a MahallaUSA festival", uz: "MahallaUSA festivalida koʻngillilar katta qozondan mehmonlarga palov tarqatmoqda" },
   "plov-master": { en: "A cook stirring plov in a giant kazan at a MahallaUSA festival", uz: "MahallaUSA festivalida oshpaz katta qozonda palov damlamoqda" },
   "kids-drawing": { en: "Children drawing and colouring at a MahallaUSA event", uz: "MahallaUSA tadbirida rasm chizayotgan bolalar" },
