@@ -11,7 +11,7 @@ import { ziyoClasses, funSunday } from "@/content/ziyoart";
 import { photoAlt, type PhotoName } from "@/content/photos";
 
 const programPhoto: Record<string, PhotoName> = {
-  ziyoart: "kids-drawing",
+  ziyoart: "ziyoart-group",
   "youth-club": "youth-football",
   "newcomer-support": "community-gathering",
   festivals: "plov-master",

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 }
 
 const programPhoto: Record<string, PhotoName> = {
-  ziyoart: "kids-drawing",
+  ziyoart: "ziyoart-group",
   "youth-club": "youth-football",
   "newcomer-support": "community-gathering",
   festivals: "plov-master",

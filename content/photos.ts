@@ -8,6 +8,7 @@ export const photos = {
   "ufa-award": { en: "MahallaUSA receiving an honorary plate from the Uzbekistan Football Association", uz: "MahallaUSA Oʻzbekiston Futbol Assotsiatsiyasidan esdalik sovgʻasini qabul qilmoqda" },
   "plov-serving": { en: "Volunteers serving plov from a giant kazan to guests at a MahallaUSA festival", uz: "MahallaUSA festivalida koʻngillilar katta qozondan mehmonlarga palov tarqatmoqda" },
   "plov-master": { en: "A cook stirring plov in a giant kazan at a MahallaUSA festival", uz: "MahallaUSA festivalida oshpaz katta qozonda palov damlamoqda" },
+  "ziyoart-group": { en: "ZiyoArt Academy children in green uniforms on a class trip in New York", uz: "Yashil forma kiygan ZiyoArt Academy bolalari Nyu-Yorkdagi sayohatda" },
   "kids-drawing": { en: "Children drawing and colouring at a MahallaUSA event", uz: "MahallaUSA tadbirida rasm chizayotgan bolalar" },
   "youth-football": { en: "A young men's football team at a MahallaUSA tournament", uz: "MahallaUSA turniridagi yoshlar futbol jamoasi" },
   "community-gathering": { en: "Community members gathered indoors in front of a suzani", uz: "Soʻzana oldida yigʻilgan jamoa aʼzolari" },
