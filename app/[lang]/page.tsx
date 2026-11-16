@@ -64,10 +64,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           slides={(
             [
               ["festival-dance", "72% 25%"],
-              ["festival-singer", "60% 35%"],
-              ["plov-master", "65% 40%"],
-              ["trophy", "60% 30%"],
-              ["community-kitchen", "62% 40%"],
+              ["face-painting", "62% 40%"],
+              ["arm-wrestling", "58% 40%"],
+              ["champions-team", "58% 30%"],
+              ["ziyoart-students", "62% 35%"],
             ] as [PhotoName, string][]
           ).map(([name, pos]) => ({ src: `/photos/${name}.jpg`, alt: photoAlt(name, lang), pos }))}
         />

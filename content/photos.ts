@@ -16,6 +16,10 @@ export const photos = {
   "trophy2": { en: "Players and fans lifting the trophy at a MahallaUSA tournament", uz: "MahallaUSA turnirida oʻyinchilar va muxlislar kubokni koʻtarmoqda" },
   "guests": { en: "Guests and community leaders gathered at a MahallaUSA celebration", uz: "MahallaUSA bayramida yigʻilgan mehmonlar va jamoa yetakchilari" },
   "anniversary": { en: "A gift presented at a MahallaUSA anniversary celebration", uz: "MahallaUSA yubiley tantanasida sovgʻa topshirilmoqda" },
+  "face-painting": { en: "Children having their faces painted at a MahallaUSA festival", uz: "MahallaUSA festivalida bolalar yuziga rasm chizdirmoqda" },
+  "arm-wrestling": { en: "A crowd cheering an arm-wrestling match at a MahallaUSA festival", uz: "MahallaUSA festivalida bilak kurashini olqishlayotgan olomon" },
+  "champions-team": { en: "A football team lifting the trophy at a MahallaUSA tournament", uz: "MahallaUSA turnirida kubokni koʻtarayotgan futbol jamoasi" },
+  "ziyoart-students": { en: "ZiyoArt Academy students in uniform on a Brooklyn street", uz: "Bruklin koʻchasida forma kiygan ZiyoArt Academy oʻquvchilari" },
 } as const;
 
 export type PhotoName = keyof typeof photos;
