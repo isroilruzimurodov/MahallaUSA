@@ -100,7 +100,7 @@ const en = {
     statementBody: "In Uzbekistan every family belongs to a mahalla. In New York, MahallaUSA is that neighbourhood — for more than ten years and more than fifteen thousand people.",
     galleryTitle: "Moments from our festivals",
     galleryLead: "Food, music, sport and the people who make it happen.",
-    captions: { plov: "Plov in the kazan", stage: "Famous singers from Uzbekistan", sport: "Tournaments", honour: "Honouring our community", champions: "Champions" },
+    captions: { plov: "Plov for everyone", stage: "Famous singers from Uzbekistan", sport: "Tournaments", honour: "Honouring our community", champions: "Champions" },
     programsCta: "Learn more",
   },
   programs: {

@@ -48,7 +48,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   ];
 
   const gallery: { name: PhotoName; caption: string; cls: string }[] = [
-    { name: "plov-master", caption: h.captions.plov, cls: "col-span-2 row-span-2 aspect-square sm:aspect-auto" },
+    { name: "plov-serving", caption: h.captions.plov, cls: "col-span-2 row-span-2 aspect-square sm:aspect-auto" },
     { name: "festival-singer", caption: h.captions.stage, cls: "aspect-[4/3] sm:aspect-auto" },
     { name: "goalkeeper", caption: h.captions.sport, cls: "aspect-[4/3] sm:aspect-auto" },
     { name: "award", caption: h.captions.honour, cls: "aspect-[4/3] sm:aspect-auto" },
