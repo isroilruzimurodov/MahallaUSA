@@ -24,9 +24,13 @@ export default {
         night: "#1F1B16",
         "night-muted": "#D9D1C4",
         "teal-light": "#8FD6DE",
+        gold: "#E3B04B",          // decorative accent, on dark grounds only
+        "night-deep": "#17130F",
+        sand: "#F6F1E7",
       },
       fontFamily: {
         display: ['"Source Serif 4 Variable"', "Georgia", "serif"],
+        script: ['"Dancing Script"', '"Brush Script MT"', "cursive"],
         sans: ['"Source Sans 3"', "system-ui", "-apple-system", "Segoe UI", "sans-serif"],
       },
       borderRadius: { sm: "6px", md: "10px", lg: "16px" },

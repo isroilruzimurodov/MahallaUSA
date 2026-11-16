@@ -35,6 +35,9 @@ export default async function LangLayout({ children, params }: { children: React
   const t = getDict(lang);
   return (
     <html lang={htmlLang[lang]}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.add('js')" }} />
+      </head>
       <body>
         <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-card focus:px-4 focus:py-3 focus:font-semibold">
           {t.nav.skip}

@@ -82,10 +82,15 @@ export function Lead({ children, className = "" }: { children: ReactNode; classN
 
 export function PageHeader({ eyebrow, title, lead }: { eyebrow?: string; title: string; lead?: string }) {
   return (
-    <div className="border-b border-line bg-card">
-      <Container className="py-12 sm:py-16">
+    <div className="relative overflow-hidden border-b border-line bg-sand">
+      <svg aria-hidden="true" viewBox="0 0 200 200" className="pointer-events-none absolute right-[6%] top-1/2 hidden h-[220px] w-[220px] -translate-y-1/2 md:block">
+        {[[40, 40, "#B01C24"], [100, 40, "#E3B04B"], [160, 40, "#1F6A9A"], [100, 100, "#006E7D"], [160, 100, "#2E8B57"], [160, 160, "#B01C24"]].map(([x, y, c]) => (
+          <rect key={`${x}-${y}`} x={(x as number) - 14} y={(y as number) - 14} width="28" height="28" fill={c as string} transform={`rotate(45 ${x} ${y})`} />
+        ))}
+      </svg>
+      <Container className="relative py-14 sm:py-20">
         {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
-        <h1 className="max-w-[820px] font-display text-[38px] font-semibold leading-[44px] sm:text-[48px] sm:leading-[54px]">{title}</h1>
+        <h1 className="max-w-[860px] font-display text-[40px] font-semibold leading-[1.06] tracking-[-0.01em] sm:text-[60px]">{title}</h1>
         {lead && <Lead className="mt-5 max-w-read">{lead}</Lead>}
       </Container>
       <TwinRule />

@@ -7,7 +7,7 @@ const uz: Dict = {
   meta: {
     title: "MahallaUSA — Nyu-Yorkdagi oʻzbek-amerikan uyushmasi",
     description:
-      "Oʻn yildan ortiq vaqt davomida MahallaUSA Nyu-Yorkda 15 000 dan ortiq odamni birlashtirdi: oʻzbek festivallari, bolalar uchun ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordam.",
+      "Oʻn yildan ortiq vaqt davomida MahallaUSA Nyu-Yorkda 15 000 dan ortiq odamni birlashtirdi: oʻzbek festivallari, bolalar uchun ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordam.",
   },
   nav: {
     home: "Bosh sahifa",
@@ -49,7 +49,7 @@ const uz: Dict = {
   home: {
     eyebrow: "Oʻzbek-amerikan uyushmasi · Bruklin, Nyu-York · 10+ yil",
     title: "Nyu-Yorkdagi oʻzbek oilalarining uyi.",
-    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA 15 000 dan ortiq odamni birlashtirdi — oʻzbek taomlari, musiqa va oʻyinlar bilan festivallar, bolalar va oʻsmirlar uchun darslar, yangi kelgan oilalarga yordam. Hammaga eshigimiz ochiq.",
+    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA 15 000 dan ortiq odamni birlashtirdi — oʻzbek taomlari, musiqa va oʻyinlar bilan festivallar, bolalar va oʻsmirlar uchun darslar, yangi kelgan oilalarga yordam. Hammaga eshigimiz ochiq.",
     ctaPrograms: "Dasturlarimiz",
     ctaNewcomer: "Nyu-Yorkka yangi keldingizmi? Shu yerdan boshlang",
     heroAlt: "MahallaUSA festivalidagi oilalar",
@@ -94,6 +94,13 @@ const uz: Dict = {
     newsletterNote: "Oʻzbek va ingliz tillarida. Istalgan vaqtda obunani bekor qilishingiz mumkin.",
     subscribe: "Obuna boʻlish",
     partnersTitle: "Homiylarimiz va hamkorlarimiz",
+    script: "Biz birgamiz — we are family",
+    statement: "Mahalla — oʻz aʼzolariga gʻamxoʻrlik qiladigan qoʻni-qoʻshnilar.",
+    statementBody: "Oʻzbekistonda har bir oila biror mahallaga tegishli. Nyu-Yorkda esa shu mahalla — MahallaUSA: oʻn yildan ortiq vaqt va oʻn besh mingdan ortiq odam.",
+    galleryTitle: "Festivallarimizdan lavhalar",
+    galleryLead: "Taom, musiqa, sport va bularning barchasini yaratadigan odamlar.",
+    captions: { plov: "Qozonda palov", stage: "Sahnada", sport: "Turnirlar", honour: "Jamoamizni taqdirlash", champions: "Gʻoliblar" },
+    programsCta: "Batafsil",
   },
   programs: {
     title: "Dasturlar",
@@ -138,7 +145,7 @@ const uz: Dict = {
         short: "Oʻzbek taomlari, mashhur sanʼatkorlar va oʻyinlar — hamma uchun ochiq.",
         body: [
           "Har yili MahallaUSA butun jamoani birlashtiradigan festivallar va bayramlar oʻtkazadi — va butun Nyu-Yorkni dasturxonga taklif qiladi.",
-          "Oʻzbek milliy taomlari, mashhur sanʼatkorlar chiqishlari, musiqa, raqs, bolalar va kattalar uchun oʻyinlar. Eng katta festivallarimizga 1 000 ga yaqin mehmon keladi.",
+          "Oʻzbek milliy taomlari, mashhur sanʼatkorlar chiqishlari, musiqa, raqs, bolalar va kattalar uchun oʻyinlar. Eng katta festivallarimizga 1 000 ga yaqin mehmon keladi.",
         ],
         details: ["Yiliga bir necha marta", "Bruklin", "Hamma taklif etiladi"],
         cta: "Yaqin tadbirlar",
@@ -154,7 +161,7 @@ const uz: Dict = {
     storyTitle: "Bizning tariximiz",
     story: [
       "MahallaUSA [yil]da Bruklinda [asoschilar] tomonidan tashkil etilgan. [Qanday boshlangani haqida ikki-uch jumla.]",
-      "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
+      "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
     ],
     valuesTitle: "Nimaga ishonamiz",
     values: [
@@ -204,7 +211,7 @@ const uz: Dict = {
   sponsors: {
     eyebrow: "Homiylik va hamkorlik",
     title: "Brendingiz — Nyu-Yorkdagi oʻzbek jamoasining markazida.",
-    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdi. Homiylar keyingi oʻn yilni yanada kattaroq qiladi.",
+    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdi. Homiylar keyingi oʻn yilni yanada kattaroq qiladi.",
     talk: "Jamoamiz bilan gaplashing",
     kit: "Homiylar uchun taqdimot (PDF)",
     reachTitle: "Kimga yetib borasiz",

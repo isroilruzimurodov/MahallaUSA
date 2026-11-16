@@ -92,6 +92,13 @@ const en = {
     newsletterNote: "In English and Uzbek. Unsubscribe anytime.",
     subscribe: "Subscribe",
     partnersTitle: "Our sponsors and partners",
+    script: "Biz birgamiz — we are family",
+    statement: "A mahalla is a neighbourhood that looks after its own.",
+    statementBody: "In Uzbekistan every family belongs to a mahalla. In New York, MahallaUSA is that neighbourhood — for more than ten years and more than fifteen thousand people.",
+    galleryTitle: "Moments from our festivals",
+    galleryLead: "Food, music, sport and the people who make it happen.",
+    captions: { plov: "Plov in the kazan", stage: "On stage", sport: "Tournaments", honour: "Honouring our community", champions: "Champions" },
+    programsCta: "Learn more",
   },
   programs: {
     title: "Programs",
