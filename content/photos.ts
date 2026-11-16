@@ -6,6 +6,7 @@ export const photos = {
   "festival-dance": { en: "Girls in traditional costume performing an Uzbek dance at a MahallaUSA festival", uz: "MahallaUSA festivalida milliy liboslardagi qizlar oʻzbek raqsini ijro etmoqda" },
   "festival-picnic": { en: "Families picnicking in a Brooklyn park at a MahallaUSA holiday celebration", uz: "MahallaUSA bayramida Bruklin bogʻida dam olayotgan oilalar" },
   "ufa-award": { en: "MahallaUSA receiving an honorary plate from the Uzbekistan Football Association", uz: "MahallaUSA Oʻzbekiston Futbol Assotsiatsiyasidan esdalik sovgʻasini qabul qilmoqda" },
+  "festival-ebru": { en: "Women in traditional dress beside an ebru paper-marbling table at a MahallaUSA spring festival", uz: "MahallaUSA bahor festivalida ebru (suvda rasm) stoli yonida milliy libosdagi ayollar" },
   "plov-serving": { en: "Volunteers serving plov from a giant kazan to guests at a MahallaUSA festival", uz: "MahallaUSA festivalida koʻngillilar katta qozondan mehmonlarga palov tarqatmoqda" },
   "plov-master": { en: "A cook stirring plov in a giant kazan at a MahallaUSA festival", uz: "MahallaUSA festivalida oshpaz katta qozonda palov damlamoqda" },
   "ziyoart-group": { en: "ZiyoArt Academy children in green uniforms on a class trip in New York", uz: "Yashil forma kiygan ZiyoArt Academy bolalari Nyu-Yorkdagi sayohatda" },

@@ -14,7 +14,7 @@ const programPhoto: Record<string, PhotoName> = {
   ziyoart: "ziyoart-group",
   "youth-club": "youth-football",
   "newcomer-support": "community-gathering",
-  festivals: "plov-master",
+  festivals: "festival-ebru",
 };
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
