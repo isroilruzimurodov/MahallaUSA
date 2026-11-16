@@ -5,12 +5,13 @@ import { href, isLocale } from "@/lib/i18n";
 import { site } from "@/content/site";
 import { guides } from "@/content/guides";
 import { getUpcomingEvents } from "@/lib/cms";
-import { Button, Container, Eyebrow, Fact, H2, Lead, PhotoSlot, Stat, TwinRule } from "@/components/ui";
+import { Button, Container, Eyebrow, Fact, H2, Lead, Photo, Stat, TwinRule } from "@/components/ui";
 import ProgramIcon from "@/components/ProgramIcon";
 import { NewsletterForm } from "@/components/Forms";
 import EventCard from "@/components/EventCard";
 import { formatDate } from "@/lib/format";
 import { pageMeta } from "@/lib/meta";
+import { photoAlt } from "@/content/photos";
 import { has } from "@/lib/placeholders";
 import { funSunday } from "@/content/ziyoart";
 
@@ -45,7 +46,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             </Button>
           </div>
         </div>
-        <PhotoSlot label={`${h.heroAlt} — ${t.common.photoNeeded}`} className="aspect-[4/3]" />
+        <Photo name="community-kitchen" alt={photoAlt("community-kitchen", lang)} className="aspect-[4/3]" priority />
       </Container>
 
       <Container>
@@ -110,7 +111,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           </Link>
         </div>
         <article className="flex flex-wrap overflow-hidden rounded-lg border border-line bg-card">
-          <PhotoSlot label={t.common.photoNeeded} tone="red" className="min-h-[260px] flex-[1_1_420px] rounded-none" />
+          <Photo name="festival-dance" alt={photoAlt("festival-dance", lang)} className="min-h-[300px] flex-[1_1_420px] rounded-none" />
           <div className="flex flex-[1_1_420px] flex-col justify-center gap-4 p-8 sm:p-10">
             <Eyebrow className="mb-0 text-red">{h.festivalLabel}</Eyebrow>
             <h3 className="font-display text-[30px] font-semibold leading-9">{h.festivalTitle}</h3>

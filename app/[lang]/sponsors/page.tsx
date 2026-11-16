@@ -2,9 +2,10 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { photoAlt } from "@/content/photos";
 import { has } from "@/lib/placeholders";
 import { site, isMissing } from "@/content/site";
-import { Button, Container, Eyebrow, Fact, H2, Lead, PhotoSlot, Stat, TwinRule } from "@/components/ui";
+import { Button, Container, Eyebrow, Fact, H2, Lead, Photo, Stat, TwinRule } from "@/components/ui";
 import { SponsorForm } from "@/components/Forms";
 
 type Props = { params: Promise<{ lang: string }> };
@@ -48,7 +49,7 @@ export default async function Sponsors({ params }: Props) {
               )}
             </div>
           </div>
-          <PhotoSlot label={t.common.photoNeeded} className="aspect-[4/3]" />
+          <Photo name="trophy" alt={photoAlt("trophy", lang)} className="aspect-[4/3]" priority />
         </Container>
       </section>
 

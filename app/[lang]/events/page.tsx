@@ -3,12 +3,13 @@ import { getDict } from "@/lib/dict";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
 import { getUpcomingEvents } from "@/lib/cms";
-import { Container, H2, PageHeader, PhotoSlot } from "@/components/ui";
+import { Container, H2, PageHeader, Photo } from "@/components/ui";
 import EventCard from "@/components/EventCard";
 import { NewsletterForm } from "@/components/Forms";
 import Link from "next/link";
 import { href } from "@/lib/i18n";
 import { funSunday } from "@/content/ziyoart";
+import { photoAlt } from "@/content/photos";
 
 export const revalidate = 60;
 
@@ -56,7 +57,7 @@ export default async function Events({ params }: Props) {
       </Container>
       <section className="border-t border-line bg-card">
         <Container className="grid items-center gap-10 py-16 lg:grid-cols-2">
-          <PhotoSlot label={t.common.photoNeeded} tone="red" className="aspect-[4/3]" />
+          <Photo name="festival-picnic" alt={photoAlt("festival-picnic", lang)} className="aspect-[4/3]" />
           <div>
             <H2>{e.pastTitle}</H2>
             <ul className="mt-6 flex list-disc flex-col gap-2 pl-5 text-[17px] leading-[27px] text-muted">

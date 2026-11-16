@@ -5,9 +5,17 @@ import { getDict } from "@/lib/dict";
 import { href, isLocale, locales } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
 import { site, isMissing } from "@/content/site";
-import { Button, Container, Fact, PageHeader, PhotoSlot } from "@/components/ui";
+import { Button, Container, Fact, PageHeader, Photo } from "@/components/ui";
 import AskUs from "@/components/AskUs";
 import { ziyoClasses, funSunday } from "@/content/ziyoart";
+import { photoAlt, type PhotoName } from "@/content/photos";
+
+const programPhoto: Record<string, PhotoName> = {
+  ziyoart: "kids-drawing",
+  "youth-club": "youth-football",
+  "newcomer-support": "community-gathering",
+  festivals: "plov-master",
+};
 
 type Props = { params: Promise<{ lang: string; slug: string }> };
 
@@ -71,7 +79,7 @@ export default async function Program({ params }: Props) {
           <AskUs lang={lang} t={t} />
         </div>
         <aside className="flex flex-col gap-6">
-          <PhotoSlot label={`${p.title} — ${t.common.photoNeeded}`} tone={slug === "festivals" ? "red" : "teal"} className="aspect-[4/3]" />
+          <Photo name={programPhoto[slug]} alt={photoAlt(programPhoto[slug], lang)} className="aspect-[4/3]" priority />
           <ul className="flex flex-col divide-y divide-line rounded-lg border border-line bg-card">
             {p.details.map((d) => (
               <li key={d} className="px-5 py-3.5">

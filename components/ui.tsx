@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { isMissing } from "@/content/site";
@@ -126,6 +127,15 @@ export function PhotoSlot({ label, tone = "teal", className = "" }: { label: str
         </g>
       </svg>
       <span className="relative m-5 rounded-sm bg-white px-3 py-2 text-[14px] leading-5 text-ink">{label}</span>
+    </div>
+  );
+}
+
+/** A real photo from public/photos, cropped to fill its frame. */
+export function Photo({ name, alt, className = "", sizes = "(min-width: 1024px) 560px, 100vw", priority }: { name: string; alt: string; className?: string; sizes?: string; priority?: boolean }) {
+  return (
+    <div className={`relative overflow-hidden rounded-lg bg-quiet ${className}`}>
+      <Image src={`/photos/${name}.jpg`} alt={alt} fill sizes={sizes} priority={priority} className="object-cover" />
     </div>
   );
 }
