@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { href, isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { has } from "@/lib/placeholders";
 import { site } from "@/content/site";
 import { Button, Container, Fact, H2, PageHeader, Stat } from "@/components/ui";
 
@@ -81,9 +82,11 @@ export default async function About({ params }: Props) {
           <H2>{a.transparencyTitle}</H2>
           <p className="mt-3 max-w-read">{a.transparency}</p>
           <ul className="mt-4 flex flex-col gap-2 text-muted">
-            <li>
-              EIN: <Fact value={site.ein} />
-            </li>
+            {has(site.ein) && (
+              <li>
+                EIN: <Fact value={site.ein} />
+              </li>
+            )}
             {a.transparencyItems.map((i) => (
               <li key={i}>{i}</li>
             ))}

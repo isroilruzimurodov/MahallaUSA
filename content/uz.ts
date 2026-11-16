@@ -154,7 +154,7 @@ const uz: Dict = {
     storyTitle: "Bizning tariximiz",
     story: [
       "MahallaUSA [yil]da Bruklinda [asoschilar] tomonidan tashkil etilgan. [Qanday boshlangani haqida ikki-uch jumla.]",
-      "Shundan beri festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
+      "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
     ],
     valuesTitle: "Nimaga ishonamiz",
     values: [
@@ -226,7 +226,7 @@ const uz: Dict = {
       { name: "Doʻst", priceKey: "friend", perks: ["Homiylar sahifasida logotip", "Ijtimoiy tarmoqda minnatdorchilik posti"] },
       { name: "Tadbir homiysi", priceKey: "event", perks: ["Doʻst darajasidagi hamma narsa", "Bitta festivalda banner va stend", "Tadbir afishalari va postlarida logotip"] },
       { name: "Mavsum hamkori", priceKey: "season", perks: ["Yil davomidagi barcha tadbirlarda Tadbir homiysi imkoniyatlari", "Sahnadan nomi aytiladi", "Bosh sahifada logotip"] },
-      { name: "Bosh hamkor", priceKey: "title", perks: ["«[Festival] — [brendingiz] taqdim etadi»", "Dasturga nom berish, masalan ZiyoArt stipendiyasi", "Rahbariyat bilan birga tuzilgan reja"] },
+      { name: "Bosh hamkor", priceKey: "title", perks: ["Festival nomida sizning brendingiz", "Dasturga nom berish, masalan ZiyoArt stipendiyasi", "Rahbariyat bilan birga tuzilgan reja"] },
     ],
     mostChosen: "Eng koʻp tanlanadi",
     letsTalk: "Kelishamiz",

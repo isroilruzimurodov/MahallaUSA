@@ -4,6 +4,7 @@ import type { Dict } from "@/content/en";
 import { site, isMissing } from "@/content/site";
 import { href, type Locale } from "@/lib/i18n";
 import { Fact, TwinRule } from "./ui";
+import { has } from "@/lib/placeholders";
 
 export default function Footer({ lang, t }: { lang: Locale; t: Dict }) {
   const social = Object.entries(site.social).filter(([, url]) => url);
@@ -32,7 +33,12 @@ export default function Footer({ lang, t }: { lang: Locale; t: Dict }) {
             {isMissing(site.email) ? <Fact value={site.email} /> : <a href={`mailto:${site.email}`}>{site.email}</a>} · <Fact value={site.phone} />
           </address>
           <p className="text-[14px] leading-5 text-muted">
-            {t.footer.nonprofit} · EIN <Fact value={site.ein} />
+            {t.footer.nonprofit}
+            {has(site.ein) && (
+              <>
+                {" "}· EIN <Fact value={site.ein} />
+              </>
+            )}
           </p>
         </div>
         <nav aria-label={t.footer.org} className="flex flex-col gap-2 text-[15px]">

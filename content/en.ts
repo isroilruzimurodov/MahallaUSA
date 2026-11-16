@@ -152,7 +152,7 @@ const en = {
     storyTitle: "Our story",
     story: [
       "MahallaUSA was founded in [year] by [founders] in Brooklyn. [Two or three sentences on how it began.]",
-      "Since then we have brought more than 15,000 people together at festivals, classes and community programs — and built ZiyoArt Academy, the Youth Club and support for newcomers.",
+      "Over more than ten years we have brought over 15,000 people together at festivals, classes and community programs — and built ZiyoArt Academy, the Youth Club and support for newcomers.",
     ],
     valuesTitle: "What we believe",
     values: [
@@ -224,7 +224,7 @@ const en = {
       { name: "Friend", priceKey: "friend", perks: ["Logo on our sponsors page", "Thank-you post on social media"] },
       { name: "Event sponsor", priceKey: "event", perks: ["Everything in Friend", "Banner and booth at one festival", "Logo on the event's posters and posts"] },
       { name: "Season partner", priceKey: "season", perks: ["Everything in Event sponsor, at every event of the year", "Named from the stage", "Logo on the homepage"] },
-      { name: "Title partner", priceKey: "title", perks: ["“[Festival] presented by [your brand]”", "Name a program, such as a ZiyoArt scholarship", "A plan built with our leadership"] },
+      { name: "Title partner", priceKey: "title", perks: ["Your brand in the name of a festival", "Name a program, such as a ZiyoArt scholarship", "A plan built with our leadership"] },
     ],
     mostChosen: "Most chosen",
     letsTalk: "Let's talk",

@@ -11,6 +11,7 @@ import { NewsletterForm } from "@/components/Forms";
 import EventCard from "@/components/EventCard";
 import { formatDate } from "@/lib/format";
 import { pageMeta } from "@/lib/meta";
+import { has } from "@/lib/placeholders";
 import { funSunday } from "@/content/ziyoart";
 
 export const revalidate = 60;
@@ -177,7 +178,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <H2>{h.donateTitle}</H2>
             <Lead className="mt-3">{h.donateLead}</Lead>
             <p className="mt-3 text-[14px] leading-5 text-muted">
-              {h.taxNote} EIN <Fact value={site.ein} />
+              {h.taxNote}
+              {has(site.ein) && (
+                <>
+                  {" "}EIN <Fact value={site.ein} />
+                </>
+              )}
             </p>
           </div>
           <div className="flex flex-wrap gap-3">
@@ -202,9 +208,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               <Button href={href(lang, "/sponsors")} variant="light">
                 {h.sponsorCta}
               </Button>
-              <Button href={href(lang, "/sponsors#kit")} variant="outline-light">
-                {h.sponsorKit}
-              </Button>
+              {has(site.sponsorKitPdf) && (
+                <Button href={href(lang, "/sponsors#kit")} variant="outline-light">
+                  {h.sponsorKit}
+                </Button>
+              )}
             </div>
           </div>
           <dl className="grid flex-[1_1_300px] grid-cols-2 gap-6">

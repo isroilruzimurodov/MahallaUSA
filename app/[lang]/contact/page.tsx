@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { has } from "@/lib/placeholders";
 import { site, isMissing } from "@/content/site";
 import { Container, Fact, PageHeader } from "@/components/ui";
 import { ContactForm } from "@/components/Forms";
@@ -33,7 +34,7 @@ export default async function Contact({ params }: Props) {
     },
     { label: c.write, value: isMissing(site.email) ? <Fact value={site.email} /> : <a href={`mailto:${site.email}`}>{site.email}</a> },
     { label: c.call, value: isMissing(site.phone) ? <Fact value={site.phone} /> : <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}>{site.phone}</a> },
-    { label: c.hours, value: <Fact value={site.officeHours} /> },
+    ...(has(site.officeHours) ? [{ label: c.hours, value: <Fact value={site.officeHours} /> }] : []),
   ];
 
   return (

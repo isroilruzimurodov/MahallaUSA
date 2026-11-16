@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { has } from "@/lib/placeholders";
 import { site, isMissing } from "@/content/site";
 import { Button, Container, Eyebrow, Fact, H2, Lead, PhotoSlot, Stat, TwinRule } from "@/components/ui";
 import { SponsorForm } from "@/components/Forms";
@@ -34,7 +35,7 @@ export default async function Sponsors({ params }: Props) {
               <Button href="#contact" variant="light" size="lg">
                 {s.talk}
               </Button>
-              {isMissing(site.sponsorKitPdf) ? (
+              {!has(site.sponsorKitPdf) ? null : isMissing(site.sponsorKitPdf) ? (
                 <span id="kit" className="inline-flex min-h-[52px] items-center rounded-md border border-white/40 px-6 text-[15px]">
                   {s.kit}: <Fact value={site.sponsorKitPdf} />
                 </span>
@@ -126,12 +127,14 @@ export default async function Sponsors({ params }: Props) {
               <span>{item}</span>
             </li>
           ))}
-          <li className="flex gap-3 text-muted">
-            <span className="w-6 shrink-0" />
-            <span>
-              EIN <Fact value={site.ein} />
-            </span>
-          </li>
+          {has(site.ein) && (
+            <li className="flex gap-3 text-muted">
+              <span className="w-6 shrink-0" />
+              <span>
+                EIN <Fact value={site.ein} />
+              </span>
+            </li>
+          )}
         </ul>
       </Container>
 

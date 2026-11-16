@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { href, isLocale } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { has } from "@/lib/placeholders";
 import { site, isMissing } from "@/content/site";
 import { Container, Fact, H2, PageHeader } from "@/components/ui";
 
@@ -56,7 +57,12 @@ export default async function Donate({ params }: Props) {
             {d.secure}
           </p>
           <p className="mt-2 text-[14px] leading-5 text-muted">
-            {t.home.taxNote} EIN <Fact value={site.ein} />
+            {t.home.taxNote}
+            {has(site.ein) && (
+              <>
+                {" "}EIN <Fact value={site.ein} />
+              </>
+            )}
           </p>
         </section>
 
@@ -65,6 +71,7 @@ export default async function Donate({ params }: Props) {
             <h2 className="text-[20px] font-semibold leading-[26px]">{d.monthlyTitle}</h2>
             <p className="mt-2 text-muted">{d.monthlyBody}</p>
           </section>
+          {d.impact.length > 0 && (
           <section>
             <h2 className="text-[20px] font-semibold leading-[26px]">{d.impactTitle}</h2>
             <ul className="mt-3 flex flex-col gap-2">
@@ -75,6 +82,7 @@ export default async function Donate({ params }: Props) {
               ))}
             </ul>
           </section>
+          )}
         </div>
       </Container>
 

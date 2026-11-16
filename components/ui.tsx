@@ -1,9 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { isMissing } from "@/content/site";
+import { has } from "@/lib/placeholders";
 
 /** Renders a site fact; a missing one is highlighted so the team can spot it. */
 export function Fact({ value }: { value: string }) {
+  if (!has(value)) return null;
   if (isMissing(value)) return <span className="todo">{value}</span>;
   return <>{value}</>;
 }
@@ -91,6 +93,7 @@ export function PageHeader({ eyebrow, title, lead }: { eyebrow?: string; title: 
 }
 
 export function Stat({ value, label, dark, className = "" }: { value: string; label: string; dark?: boolean; className?: string }) {
+  if (!has(value)) return null;
   return (
     <div className={`flex flex-col-reverse gap-1 ${className}`}>
       <dt className={`text-[15px] ${dark ? "text-night-muted" : "text-muted"}`}>{label}</dt>

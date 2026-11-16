@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { getDict } from "@/lib/dict";
 import { isLocale, locales } from "@/lib/i18n";
 import { pageMeta } from "@/lib/meta";
+import { showPlaceholders } from "@/lib/placeholders";
 import { Container, PageHeader } from "@/components/ui";
 
 const slugs = ["privacy", "donor-privacy", "accessibility", "terms"] as const;
@@ -30,9 +31,11 @@ export default async function Legal({ params }: Props) {
       <PageHeader title={page.title} />
       <Container className="py-12">
         <div className="flex max-w-read flex-col gap-4 text-[17px] leading-[28px]">
-          <p className="text-[14px]">
-            <span className="todo">{t.legal.draftNote}</span>
-          </p>
+          {showPlaceholders && (
+            <p className="text-[14px]">
+              <span className="todo">{t.legal.draftNote}</span>
+            </p>
+          )}
           {page.body.map((p) => (
             <p key={p}>{p}</p>
           ))}
