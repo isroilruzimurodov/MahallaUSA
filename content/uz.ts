@@ -45,6 +45,9 @@ const uz: Dict = {
     ages: "Yoshi",
     free: "Bepul",
     weekly: "Har hafta",
+    pauseSlides: "Suratlarni toʻxtatish",
+    playSlides: "Suratlarni davom ettirish",
+    showSlide: "Suratni koʻrsatish",
   },
   home: {
     eyebrow: "Oʻzbek-amerikan uyushmasi · Bruklin, Nyu-York · 10+ yil",

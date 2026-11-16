@@ -43,6 +43,9 @@ const en = {
     ages: "Ages",
     free: "Free",
     weekly: "Every week",
+    pauseSlides: "Pause photos",
+    playSlides: "Play photos",
+    showSlide: "Show photo",
   },
   home: {
     eyebrow: "Uzbek-American Association · Brooklyn, NY · 10+ years",
