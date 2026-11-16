@@ -5,11 +5,11 @@
  */
 export const site = {
   name: "MahallaUSA",
-  legalName: "MahallaUSA — Uzbek-American Association",
+  legalName: "Mahalla USA Inc.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://mahallausa.org",
 
   // Legal & trust
-  ein: "[EIN 00-0000000]",
+  ein: "84-2552292",
   foundedYear: "[Year founded]",
 
   // Contact
