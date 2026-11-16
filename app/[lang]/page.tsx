@@ -64,7 +64,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           fill
           priority
           sizes="100vw"
-          className="hero-img -z-20 object-cover object-[70%_30%]"
+          className="hero-img -z-20 object-cover object-[72%_25%]"
         />
         <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[linear-gradient(0deg,rgba(23,19,15,.97)_0%,rgba(23,19,15,.88)_55%,rgba(23,19,15,.55)_100%)] lg:bg-[linear-gradient(90deg,rgba(23,19,15,.97)_0%,rgba(23,19,15,.88)_38%,rgba(23,19,15,.1)_72%)]" />
         <Container className="flex min-h-[640px] flex-col justify-end gap-8 pb-12 pt-40 sm:min-h-[720px] lg:justify-center lg:pt-16">
