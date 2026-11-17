@@ -5,7 +5,7 @@ const en = {
   meta: {
     title: "MahallaUSA — Uzbek-American Association in Brooklyn, New York",
     description:
-      "For more than ten years MahallaUSA has brought over 15,000 people together in New York: Uzbek festivals, ZiyoArt Academy classes for children, the Youth Club and help for newcomers.",
+      "For more than ten years MahallaUSA has brought over 50,000 people together in New York: Uzbek festivals, ZiyoArt Academy classes for children, the Youth Club and help for newcomers.",
   },
   nav: {
     home: "Home",
@@ -50,7 +50,7 @@ const en = {
   home: {
     eyebrow: "Uzbek-American Association · Brooklyn, NY · 10+ years",
     title: "A home for Uzbek families in New York.",
-    lead: "For more than ten years, MahallaUSA has brought over 15,000 people together — festivals with Uzbek food, music and games, classes for children and teens, and help for families who have just arrived. Everyone is welcome.",
+    lead: "For more than ten years, MahallaUSA has brought over 50,000 people together — festivals with Uzbek food, music and games, classes for children and teens, and help for families who have just arrived. Everyone is welcome.",
     ctaPrograms: "Explore programs",
     ctaNewcomer: "New to New York? Start here",
     heroAlt: "Families at a MahallaUSA festival",
@@ -162,7 +162,7 @@ const en = {
     storyTitle: "Our story",
     story: [
       "Our community has organised the interstate Independence Cup football tournament since 2016. In 2019 MahallaUSA was founded in Brooklyn and launched the interstate Navruz Soccer Tournament, and in 2020 it opened ZiyoArt Academy for Uzbek children.",
-      "Over more than ten years we have brought over 15,000 people together at festivals, classes and community programs — and built ZiyoArt Academy, the Youth Club and support for newcomers.",
+      "Over more than ten years we have brought over 50,000 people together at festivals, classes and community programs — and built ZiyoArt Academy, the Youth Club and support for newcomers.",
     ],
     valuesTitle: "What we believe",
     values: [
@@ -217,7 +217,7 @@ const en = {
   sponsors: {
     eyebrow: "Sponsorship & partnerships",
     title: "Your brand, at the heart of New York's Uzbek community.",
-    lead: "For more than ten years MahallaUSA has brought over 15,000 people together at festivals, classes and community programs. Sponsors make the next ten years bigger.",
+    lead: "For more than ten years MahallaUSA has brought over 50,000 people together at festivals, classes and community programs. Sponsors make the next ten years bigger.",
     talk: "Talk to our team",
     kit: "Download sponsor kit (PDF)",
     reachTitle: "Who you reach",

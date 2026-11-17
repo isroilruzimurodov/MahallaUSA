@@ -7,7 +7,7 @@ const uz: Dict = {
   meta: {
     title: "MahallaUSA — Nyu-Yorkdagi oʻzbek-amerikan uyushmasi",
     description:
-      "Oʻn yildan ortiq vaqt davomida MahallaUSA Nyu-Yorkda 15 000 dan ortiq odamni birlashtirdi: oʻzbek festivallari, bolalar uchun ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordam.",
+      "Oʻn yildan ortiq vaqt davomida MahallaUSA Nyu-Yorkda 50 000 dan ortiq odamni birlashtirdi: oʻzbek festivallari, bolalar uchun ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordam.",
   },
   nav: {
     home: "Bosh sahifa",
@@ -52,7 +52,7 @@ const uz: Dict = {
   home: {
     eyebrow: "Oʻzbek-amerikan uyushmasi · Bruklin, Nyu-York · 10+ yil",
     title: "Nyu-Yorkdagi oʻzbek oilalarining uyi.",
-    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA 15 000 dan ortiq odamni birlashtirdi — oʻzbek taomlari, musiqa va oʻyinlar bilan festivallar, bolalar va oʻsmirlar uchun darslar, yangi kelgan oilalarga yordam. Hammaga eshigimiz ochiq.",
+    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA 50 000 dan ortiq odamni birlashtirdi — oʻzbek taomlari, musiqa va oʻyinlar bilan festivallar, bolalar va oʻsmirlar uchun darslar, yangi kelgan oilalarga yordam. Hammaga eshigimiz ochiq.",
     ctaPrograms: "Dasturlarimiz",
     ctaNewcomer: "Nyu-Yorkka yangi keldingizmi? Shu yerdan boshlang",
     heroAlt: "MahallaUSA festivalidagi oilalar",
@@ -164,7 +164,7 @@ const uz: Dict = {
     storyTitle: "Bizning tariximiz",
     story: [
       "Jamoamiz 2016-yildan beri shtatlararo Mustaqillik kubogi futbol turnirini oʻtkazib keladi. 2019-yilda Bruklinda MahallaUSA tashkil etildi va shtatlararo Navroʻz futbol turniri boshlandi, 2020-yilda esa oʻzbek bolalari uchun ZiyoArt Academy ochildi.",
-      "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
+      "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 50 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
     ],
     valuesTitle: "Nimaga ishonamiz",
     values: [
@@ -219,7 +219,7 @@ const uz: Dict = {
   sponsors: {
     eyebrow: "Homiylik va hamkorlik",
     title: "Brendingiz — Nyu-Yorkdagi oʻzbek jamoasining markazida.",
-    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdi. Homiylar keyingi oʻn yilni yanada kattaroq qiladi.",
+    lead: "Oʻn yildan ortiq vaqt davomida MahallaUSA festivallar, darslar va jamoa dasturlarida 50 000 dan ortiq odamni birlashtirdi. Homiylar keyingi oʻn yilni yanada kattaroq qiladi.",
     talk: "Jamoamiz bilan gaplashing",
     kit: "Homiylar uchun taqdimot (PDF)",
     reachTitle: "Kimga yetib borasiz",

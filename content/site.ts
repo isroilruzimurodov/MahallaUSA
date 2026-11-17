@@ -39,7 +39,7 @@ export const site = {
   // Numbers shown on the site (confirmed by MahallaUSA)
   stats: {
     years: "10+",
-    people: "15,000+",
+    people: "50,000+",
     festivalGuests: "~1,000",
     students: "~80",
     eventsPerYear: "9+",
