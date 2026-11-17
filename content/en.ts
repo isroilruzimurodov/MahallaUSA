@@ -161,7 +161,7 @@ const en = {
       "MahallaUSA brings the Uzbek-American community together, keeps our culture alive for the next generation, and helps newcomers build a good life in New York — while opening our doors to all our neighbors.",
     storyTitle: "Our story",
     story: [
-      "MahallaUSA was founded in [year] by [founders] in Brooklyn. [Two or three sentences on how it began.]",
+      "Our community has organised the interstate Independence Cup football tournament since 2016. In 2019 MahallaUSA was founded in Brooklyn and launched the interstate Navruz Soccer Tournament, and in 2020 it opened ZiyoArt Academy for Uzbek children.",
       "Over more than ten years we have brought over 15,000 people together at festivals, classes and community programs — and built ZiyoArt Academy, the Youth Club and support for newcomers.",
     ],
     valuesTitle: "What we believe",
@@ -189,10 +189,15 @@ const en = {
     empty: "New events are announced here and in our newsletter. Subscribe so you don't miss the next festival.",
     pastTitle: "Every year at MahallaUSA",
     past: [
-      "Uzbek national dishes — plov, somsa and more",
-      "Performances by well-known Uzbek artists",
-      "Games and activities for children and adults",
-      "Holiday celebrations for the whole community",
+      "New Year celebration",
+      "Navruz festival",
+      "Navruz Soccer Tournament (interstate, since 2019)",
+      "Eid al-Fitr",
+      "US Independence Day",
+      "Uzbekistan Independence Day",
+      "Independence Cup (interstate, since 2016)",
+      "Uzbek Language Day (October)",
+      "Thanksgiving",
     ],
   },
   involved: {

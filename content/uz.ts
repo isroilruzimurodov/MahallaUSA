@@ -163,7 +163,7 @@ const uz: Dict = {
       "MahallaUSA oʻzbek-amerikan jamoasini birlashtiradi, madaniyatimizni keyingi avlodga yetkazadi va yangi kelganlarga Nyu-Yorkda yaxshi hayot qurishda yordam beradi — barcha qoʻshnilarimizga eshigimizni ochiq tutgan holda.",
     storyTitle: "Bizning tariximiz",
     story: [
-      "MahallaUSA [yil]da Bruklinda [asoschilar] tomonidan tashkil etilgan. [Qanday boshlangani haqida ikki-uch jumla.]",
+      "Jamoamiz 2016-yildan beri shtatlararo Mustaqillik kubogi futbol turnirini oʻtkazib keladi. 2019-yilda Bruklinda MahallaUSA tashkil etildi va shtatlararo Navroʻz futbol turniri boshlandi, 2020-yilda esa oʻzbek bolalari uchun ZiyoArt Academy ochildi.",
       "Oʻn yildan ortiq vaqt davomida festivallar, darslar va jamoa dasturlarida 15 000 dan ortiq odamni birlashtirdik — ZiyoArt Academy, Yoshlar klubi va yangi kelganlarga yordamni yoʻlga qoʻydik.",
     ],
     valuesTitle: "Nimaga ishonamiz",
@@ -191,10 +191,15 @@ const uz: Dict = {
     empty: "Yangi tadbirlar shu yerda va xabarnomamizda eʼlon qilinadi. Keyingi festivalni oʻtkazib yubormaslik uchun obuna boʻling.",
     pastTitle: "MahallaUSAda har yili",
     past: [
-      "Oʻzbek milliy taomlari — palov, somsa va boshqalar",
-      "Mashhur oʻzbek sanʼatkorlarining chiqishlari",
-      "Bolalar va kattalar uchun oʻyinlar",
-      "Butun jamoa uchun bayram tantanalari",
+      "Yangi yil bayrami",
+      "Navroʻz bayrami",
+      "Navroʻz futbol turniri (shtatlararo, 2019-yildan)",
+      "Ramazon hayiti",
+      "AQSH Mustaqillik kuni",
+      "Oʻzbekiston Mustaqillik kuni",
+      "Mustaqillik kubogi (shtatlararo, 2016-yildan)",
+      "Oʻzbek tili bayrami (oktyabr)",
+      "Shukrona kuni (Thanksgiving)",
     ],
   },
   involved: {

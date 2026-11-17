@@ -10,7 +10,7 @@ export const site = {
 
   // Legal & trust
   ein: "84-2552292",
-  foundedYear: "[Year founded]",
+  foundedYear: "2019",
 
   // Contact
   address: {
@@ -22,7 +22,7 @@ export const site = {
   email: "chesscup@mahallausa.org",
   sponsorEmail: "chesscup@mahallausa.org",
   phone: "(929) 559-2999",
-  officeHours: "[Office hours]",
+  officeHours: "10:00–18:00" /* every day */,
 
   // Leadership (who sponsors talk to)
   president: "Abdumalik Ahmedov",
@@ -41,8 +41,8 @@ export const site = {
     years: "10+",
     people: "15,000+",
     festivalGuests: "~1,000",
-    students: "[ZiyoArt students]",
-    eventsPerYear: "[Events per year]",
+    students: "~80",
+    eventsPerYear: "9+",
   },
 
   // ZiyoArt Academy (MahallaUSA's school)

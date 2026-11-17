@@ -34,7 +34,7 @@ export default async function Contact({ params }: Props) {
     },
     { label: c.write, value: isMissing(site.email) ? <Fact value={site.email} /> : <a href={`mailto:${site.email}`}>{site.email}</a> },
     { label: c.call, value: isMissing(site.phone) ? <Fact value={site.phone} /> : <a href={`tel:${site.phone.replace(/[^\d+]/g, "")}`}>{site.phone}</a> },
-    ...(has(site.officeHours) ? [{ label: c.hours, value: <Fact value={site.officeHours} /> }] : []),
+    ...(has(site.officeHours) ? [{ label: c.hours, value: <>{lang === "uz" ? "Har kuni" : "Every day"}, <Fact value={site.officeHours} /></> }] : []),
   ];
 
   return (
