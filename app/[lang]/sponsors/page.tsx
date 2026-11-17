@@ -149,9 +149,6 @@ export default async function Sponsors({ params }: Props) {
               <li>
                 <Fact value={site.president} /> — {t.about.team[0].role}
               </li>
-              <li>
-                <Fact value={site.vicePresident} /> — {t.about.team[1].role}
-              </li>
               <li className="mt-2">
                 {isMissing(site.sponsorEmail) ? <Fact value={site.sponsorEmail} /> : <a href={`mailto:${site.sponsorEmail}`}>{site.sponsorEmail}</a>} · <Fact value={site.phone} />
               </li>

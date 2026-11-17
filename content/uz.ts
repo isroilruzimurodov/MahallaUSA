@@ -177,7 +177,6 @@ const uz: Dict = {
     teamLead: "MahallaUSAni jamoaning koʻngillilari boshqaradi.",
     team: [
       { key: "president", role: "Prezident" },
-      { key: "vicePresident", role: "Vitse-prezident" },
     ],
     transparencyTitle: "Ochiqlik",
     transparency:

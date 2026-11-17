@@ -175,7 +175,6 @@ const en = {
     teamLead: "MahallaUSA is led by volunteers from the community.",
     team: [
       { key: "president", role: "President" },
-      { key: "vicePresident", role: "Vice President" },
     ],
     transparencyTitle: "Transparency",
     transparency:
