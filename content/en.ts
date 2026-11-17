@@ -258,6 +258,7 @@ const en = {
     impactTitle: "What your gift does",
     impact: ["[$25 a month — what it funds]", "[$50 a month — what it funds]", "[$100 a month — what it funds]"],
     formTitle: "Make your gift",
+    openForm: "Form not loading? Open it in a new tab",
     formMissing: "The secure donation form will appear here once MahallaUSA's Zeffy account is connected.",
     secure: "Payments are processed securely. MahallaUSA never sees your card number.",
     otherTitle: "Other ways to give",

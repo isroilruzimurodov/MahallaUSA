@@ -55,7 +55,7 @@ export const site = {
   },
 
   // Donations & tuition (Zeffy recommended: no fees for the nonprofit)
-  donateFormUrl: "[Zeffy donation form URL]",
+  donateFormUrl: "https://www.zeffy.com/en-US/donation-form/support-mahallausa",
   ziyoartEnrollUrl: "https://www.ziyoartacademy.com/enrollment",
   sponsorKitPdf: "[Sponsor kit PDF]",
 

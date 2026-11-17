@@ -260,6 +260,7 @@ const uz: Dict = {
     impactTitle: "Xayriyangiz nimaga sarflanadi",
     impact: ["[Oyiga $25 — nimaga yetadi]", "[Oyiga $50 — nimaga yetadi]", "[Oyiga $100 — nimaga yetadi]"],
     formTitle: "Xayriya qilish",
+    openForm: "Forma ochilmayaptimi? Yangi oynada oching",
     formMissing: "MahallaUSAning Zeffy hisobi ulangach, xavfsiz xayriya formasi shu yerda paydo boʻladi.",
     secure: "Toʻlovlar xavfsiz amalga oshiriladi. MahallaUSA karta raqamingizni koʻrmaydi.",
     otherTitle: "Yordam berishning boshqa yoʻllari",
