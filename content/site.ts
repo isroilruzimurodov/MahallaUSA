@@ -19,8 +19,8 @@ export const site = {
     region: "NY",
     zip: "11214",
   },
-  email: "chesscup@mahallausa.org",
-  sponsorEmail: "chesscup@mahallausa.org",
+  email: "info@mahallausa.org",
+  sponsorEmail: "info@mahallausa.org",
   phone: "(929) 559-2999",
   officeHours: "10:00–18:00" /* every day */,
 
