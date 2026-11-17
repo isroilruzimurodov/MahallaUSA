@@ -10,7 +10,12 @@ export function middleware(request: NextRequest) {
   const accept = request.headers.get("accept-language")?.toLowerCase() ?? "";
   const locale = accept.startsWith("uz") || accept.includes(",uz") ? "uz" : defaultLocale;
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
+  // The home page is served in place (no redirect) so search engines can read and verify it.
+  if (pathname === "/") {
+    url.pathname = `/${locale}`;
+    return NextResponse.rewrite(url);
+  }
+  url.pathname = `/${locale}${pathname}`;
   return NextResponse.redirect(url);
 }
 

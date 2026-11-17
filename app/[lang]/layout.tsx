@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     metadataBase: new URL(site.url),
     title: { default: t.meta.title, template: `%s · MahallaUSA` },
     description: t.meta.description,
+    verification: { google: "hlMbVhX4FUE2jkO979J5SMwUHk_-eGzehIAAc2wjPrg" },
     openGraph: { siteName: "MahallaUSA", type: "website", locale: lang === "uz" ? "uz_UZ" : "en_US", images: ["/logo.png"] },
   };
 }
